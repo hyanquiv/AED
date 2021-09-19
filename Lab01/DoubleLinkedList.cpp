@@ -86,10 +86,10 @@ public:
             Dnode<T> *crawler = first;
             while (crawler->getNext() != nullptr && crawler->getNext()->getData() < info)
                 crawler = crawler->getNext();
-            toAdd->setNext(crawler->getNext());
-            Dnode<T> *aux = crawler->getNext();
-            aux->setPrev(toAdd);
             toAdd->setPrev(crawler);
+            toAdd->setNext(crawler->getNext());
+            if (crawler->getNext())
+                crawler->getNext()->setPrev(toAdd);
             crawler->setNext(toAdd);
         }
         length++;

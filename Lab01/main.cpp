@@ -24,13 +24,13 @@ int main()
     DLL1.print();
     DLL1.insert(8);
     DLL1.print();
-    DLL1.insert(15);
+    DLL1.insert(21);
     DLL1.print();
-    DLL1.insert(13);
+    DLL1.insert(31);
     DLL1.print();
     DLL1.insert(12);
     DLL1.print();
     DLL1.search(20);
-    DLL1.remove(13);
+    DLL1.remove(21);
     DLL1.print();
 }
