@@ -5,7 +5,7 @@ int main ()
 {
     Stack<int> S1;
     Queue<int> Q1;
-
+/*
     S1.push(1);
     S1.push(3);
     S1.push(8);
@@ -14,7 +14,7 @@ int main ()
     S1.print();
     std::cout<<"Se extrajo: "<<S1.pop()->getData()<<"\n";
     S1.print();
-
+*/
     Q1.enqueue(1);
     Q1.enqueue(3);
     Q1.enqueue(8);
